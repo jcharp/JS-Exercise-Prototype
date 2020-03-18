@@ -43,7 +43,11 @@ function Person(name, age) {
   this.name = name;
   this.age = age;
   this.stomach = [];
-}
+  this.eat = "someFood";
+ 
+  };
+
+
 
 /*
   TASK 2
