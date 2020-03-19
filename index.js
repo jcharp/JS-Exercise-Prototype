@@ -45,9 +45,10 @@ function Person(name, age) {
   this.stomach = [];
 }
   Person.prototype.eat = function(someFood){
-    let i =0;
-    for (i =0; i < 10; i++){
+    
+      if(this.stomach.length <10) {
       this.stomach.push(someFood);
+      
     }
     Person.prototype.poop = function() {
       this.stomach = [];
@@ -79,9 +80,12 @@ function Car(model, milesPerGallon) {
   this.model = model;
   this.milesPerGallon = milesPerGallon;
   this.tank = 0;
-  this.odometer =0;
-  
-}
+  this.odometer = 0;
+  }
+  Car.prototype.fill = function(gallons){
+    this.tank = this.tank + gallons;
+  }
+
 
 /*
   TASK 3
