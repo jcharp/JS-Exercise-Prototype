@@ -46,7 +46,7 @@ function Person(name, age) {
 }
   Person.prototype.eat = function(someFood){
     
-      if(this.stomach.length <10) {
+      if (this.stomach.length <10) {
       this.stomach.push(someFood);
       
     }
@@ -99,10 +99,17 @@ function Car(model, milesPerGallon) {
     - Besides the methods on Person.prototype, babies have the ability to `.play()`:
         + Should return a string "Playing with x", x being the favorite toy.
 */
-function Baby() {
-
+function Baby(name, age, favoriteToy) {
+  this.name = name;
+  this.age = age;
+  this.favoriteToy = favoriteToy;
 }
+  Baby.prototype.Person = function(){
 
+  }
+  Baby.prototype.play = function(){
+    return `Playing with ${this.favoriteToy}`;
+  }
 /* 
   TASK 4
 
