@@ -110,10 +110,10 @@ function Baby(name, age, favoriteToy) {
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. In the global scope,  "this" will be the windo/console object
+  2. when a preceeding dot calls a funtion, "this" is the object to the left of the dot
+  3. when you use a constructor, "this" will be the new object created
+  4. whenever a there is a "call" or "apply", that will get "this"
 */
 
 
